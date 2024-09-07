@@ -5,8 +5,8 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 import { Inter, Poppins, Raleway, Lato, Manrope } from "next/font/google";
 const raleway = Raleway({
@@ -82,46 +82,42 @@ export default function Homepage() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-200 text-black">
-          <div className="container px-4 md:px-6">
-            <div className="flex justify-center items-center ">
-              <div className="flex flex-col justify-center  space-y-10 ">
-                <div className="space-y-3">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Discover Your Next Opportunity
-                  </h1>
-                  <p className="max-w-[600px] text-gray-300 md:text-lg">
-                    Explore a wide range of job and internship opportunities in
-                    the Technical Education Department, Government of Rajasthan.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Find Jobs
-                  </Link>
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-primary text-primary-foreground px-8 text-sm font-medium shadow-sm transition-colors hover:bg-primary-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Find Internships
-                  </Link>
-                </div>
+          <div className="flex justify-center items-center w-screen px-20">
+            <div className="flex flex-col justify-center  space-y-10 ">
+              <div className="space-y-3">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Discover Your Next Opportunity
+                </h1>
+                <p className="max-w-[600px] text-gray-300 md:text-lg">
+                  Explore a wide range of job and internship opportunities in
+                  the Technical Education Department, Government of Rajasthan.
+                </p>
               </div>
-              <div className="w-1/2 rounded-lg">
-
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link
+                  href="#"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  prefetch={false}
+                >
+                  Find Jobs
+                </Link>
+                <Link
+                  href="#"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-primary text-primary-foreground px-8 text-sm font-medium shadow-sm transition-colors hover:bg-primary-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  prefetch={false}
+                >
+                  Find Internships
+                </Link>
+              </div>
+            </div>
+            <div className="w-1/2 rounded-lg">
               <img
                 src="/sideimage.png"
                 width="550"
                 height="550"
                 alt="Hero"
-                className="w-[700px] rounded-lg object-cover"
+                className="w-[780px] rounded-lg object-cover"
               />
-              </div>
-
             </div>
           </div>
         </section>
@@ -344,7 +340,6 @@ export default function Homepage() {
           </div>
         </section>
       </main>
-
 
       <section className="w-full py-12 md:py-24 lg:py-32 border-t">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
